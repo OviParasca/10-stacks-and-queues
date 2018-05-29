@@ -1,49 +1,23 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) Stacks and Queues Data Structures
 ====
 
-## To Submit this Assignment
-  * Do all your work in a public repository called `data-structures-and-algorithms`
-  * fork this repository
-  * write all of your code in a directory named `stacks-and-queues`
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
-  * write a question and observation on canvas
 
-## Requirements  
-#### Configuration  
-  <!-- list of files, configurations, tools, etc that are required -->
-  Your lab directory must include  
-  * **index.js** -- The entry point to your module
-  * **README.md** -- with a documentation about your lab
-  * **.gitignore** -- with a robust .gitignore
-  * **.eslintrc** -- with the class .eslintrc file
-  * **.eslintignore** -- with the class .eslintignore
-  * **.package.json** -- with all dependencies and dev-dependencies
-  * **lib/** -- directory for holding your programs helper modules
-  * **test/** -- directory for holding your programs unit and integration tests
+### Node.js
+* The Node class is main method is to create a new Node object, with Next and Value parameters.
 
-#### Testing  
-  * write at least three test assertions for each method of the Stack and Queue List Data Structures
-  * organize your tests into appropriate describe/it blocks for test output readability
+### Stack.js
+* The Stack uses the Node class for all it's methods.
+* The main methods for this class are: push(value), pop(), serialize(), deserialize(jsonObj)
+* The push method adds a new node to the tail of the Linked List, whereas Pop removed the last node from the tail.
+* Serialize converts that object to JSON, and Deserialize reverts back to the Linked List
 
-####  Documentation  
-  * in your README, write documentation for you data structures
-  * your documentation should includes code block useage examples
-  * provide instructions for:
-    * installing and using your data structure
-    * accessing each method
-    * running your tests
+### Queue.js
+* The Queue uses the Node class for all it's methods.
+* The main methods for this class are: enqueue(value), dequeue(), serialize(), deserialize(jsonObj)
+* The enqueu method adds a new node to the Tail of the Linked List, whereas Dequeue removes the Head node from the start of the Linked List.
+* Serialize converts that object to JSON, and Deserialize reverts back to the Linked List
 
-#### Feature Tasks  
-  * implement a Stack constructor
-  * implement `push(value)` and `pop()` methods on the Stack class
-  * implement a Queue constructor
-  * implement `enqueue(value)` and `dequeue()` methods on the Queue class
-  * implement `serialize()` and `deserialize()` methods on both classes
-
-#### Rubric:
-  * Tests: 2pts
-  * Passes linter: 1pts
-  * Completed Data Structure: 5pts
-  * Big-O notation: 2pt
+### Testting
+* Install jest via npm, using npm i jest
+* The test files are located in the __Test__/lib/ directory
+* Each method has at elas 1-3 unit tests to make sure all happy-path cases are covered
