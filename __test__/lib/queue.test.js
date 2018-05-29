@@ -48,7 +48,7 @@ describe('Queue Tests', () => {
     queue.dequeue();
     queue.dequeue();
     queue.dequeue();
-    expect(queue.head.value).toBe(null);
+    expect(queue.head).toBe(null);
   });
 
   it ('test for the new head of the Queue', () => {

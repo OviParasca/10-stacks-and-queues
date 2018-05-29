@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "eslint": "^4.19.1",
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "npm": "^6.1.0"
   },
   "bugs": {
